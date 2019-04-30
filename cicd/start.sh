@@ -8,4 +8,4 @@ cd $cur
 
 echo "starting hello world:"
 
-java -jar hello-world-0.0.1-SNAPSHOT.jar
+java -jar /app/hello-world-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,16 @@
+before_script:
+  - export env=$(echo ${CI_COMMIT_REF_NAME} | tr '[A-Z]' '[a-z]')
+  - export tag=pipe-$(echo "${CI_PIPELINE_ID}" | sed 's/(//g' | sed 's/)//g')-commit-${CI_COMMIT_SHA:0:8}
+  - export module="${CI_PROJECT_NAME}"
+  - export imagename=docker.4pd.io/env/${env}/prophet/app/spring-boot-hello-world:${tag}
+
+stages:
+  - build
+
+
+build:
+  stage: build
+  script:
+  - make
+  - docker build -t $imagename cicd
+  - docker push $imagename
