@@ -7,7 +7,7 @@
     <groupId>com._4paradigm.ee</groupId>
     <artifactId>hello-world</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>hello-world</name>
     <url>http://www.4paradigm.com</url>
     <description>auto-modle-online</description>
