@@ -4,3 +4,7 @@
 
 1. 可以从此开始一个新的Spring-Boot项目
 2. 可以提供简单的镜像测试
+
+简单的REST API
+1. /hello
+2. /getDemo
